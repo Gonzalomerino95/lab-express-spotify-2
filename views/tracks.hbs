@@ -1,0 +1,9 @@
+<div>
+    <h1>Album "{{albumName}}"</h1>
+    <h2>Artist: {{artist}}</h2>
+    <h2>Track List:</h2>
+    {{#each tracks}}
+    <p>{{this.name}}</p>
+    <audio controls src="{{this.preview_url}}"></audio>
+    {{/each}}
+</div>
